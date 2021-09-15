@@ -1,0 +1,28 @@
+package ua.alexkras.car;
+
+public class Driver implements CarDriver {
+    private DriverLicense license;
+    String name;
+
+    public Driver(String name, DriverLicense license){
+        this.license = license;
+        this.name=name;
+    }
+
+    @Override
+    public DriverLicense getDriverLicense() {
+        return license;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDriverLicense(DriverLicense license) {
+        this.license = license;
+    }
+}
