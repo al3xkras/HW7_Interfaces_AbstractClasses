@@ -5,7 +5,7 @@ public class Accumulator implements CarAccumulator{
                 width,
                 height,
                 length;
-    String manufacturerName;
+    private String manufacturerName;
 
     public Accumulator(int capacity, int width,
                        int height, int length,
@@ -15,11 +15,6 @@ public class Accumulator implements CarAccumulator{
         this.width=width;
         this.length=length;
         this.manufacturerName=manufacturerName;
-    }
-
-    @Override
-    public int capacity() {
-        return capacity;
     }
 
     @Override
@@ -52,4 +47,30 @@ public class Accumulator implements CarAccumulator{
     public void setWidth(int width) {
         this.width = width;
     }
+
+    public int getLength() {
+        return length;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public String getManufacturerName() {
+        return manufacturerName;
+    }
+
+    public void setManufacturerName(String manufacturerName) {
+        this.manufacturerName = manufacturerName;
+    }
+
+
 }

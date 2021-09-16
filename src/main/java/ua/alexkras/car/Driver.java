@@ -2,7 +2,7 @@ package ua.alexkras.car;
 
 public class Driver implements CarDriver {
     private DriverLicense license;
-    String name;
+    private String name;
 
     public Driver(String name, DriverLicense license){
         this.license = license;
@@ -24,5 +24,9 @@ public class Driver implements CarDriver {
 
     public void setDriverLicense(DriverLicense license) {
         this.license = license;
+    }
+
+    public DriverLicense getLicense() {
+        return license;
     }
 }

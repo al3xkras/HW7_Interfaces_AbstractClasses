@@ -7,14 +7,6 @@ public class Refueller {
         this.name=name;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void refuelCar(RefuelCar car){
         if (!car.refuelled()){
             car.setRefuelled(true);
@@ -22,5 +14,13 @@ public class Refueller {
             return;
         }
         System.out.println("Car is already refuelled!");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

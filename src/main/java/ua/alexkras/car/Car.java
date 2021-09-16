@@ -3,8 +3,8 @@ package ua.alexkras.car;
 public class Car implements RefuelCar,WheelCar{
     private double weight;
     private int maxSpeed;
-    DriverLicense.Category vehicleCategory;
-    CarAccumulator accumulator;
+    private DriverLicense.Category vehicleCategory;
+    private CarAccumulator accumulator;
     private boolean isRefuelled;
     private Wheel wheel;
 
@@ -100,4 +100,6 @@ public class Car implements RefuelCar,WheelCar{
     public void setAccumulator(CarAccumulator accumulator) {
         this.accumulator = accumulator;
     }
+
+
 }
